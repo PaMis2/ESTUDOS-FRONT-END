@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+   <!-- <style>
+        mark{
+            background-color:red;
+        } -->
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <hr>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar um <mark style="background-color: hotpink;">texto marcado</mark> usando a tag &lt;mark&gt;.</p>
+    <p>E no outro parágrafo, temos outro<mark> texto marcado</mark> no final.</p>
+    
+    <!--
+        ***A cor da tag "mark" é amarelinha por padrão***
+
+        Para colocar CSS dentro do código HTML, usar a tag "style".
+           
+            Usar a cor do "mark" em uma única tag:
+            ex: <mark style="background-color: hotpink;">um texto marcado</mark>
+
+        ***Usar a tag "style" no <head> abaixo do <title>***
+            Colocar a mesma cor em toda tag "mark" de uma página:
+            ex:<style>
+        mark{
+            background-color:red;
+        } 
+    -->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big> texto grande </big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <!--
+        A tag <big> ja está obsoleta!
+        ***Usar o CSS para aumentar o tamanho da letra**
+    -->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado. Usar a tag &lt;del&gt;.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. Usar a tag &lt;ins&gt;.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt;. (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 (Usar a tag &lt;sup&gt;)</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O (Usar a tag &lt;sub&gt;)</p>
+</body>
+</html>
