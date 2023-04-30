@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <hr>
+    <h2>Código-fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!--
+        Fonte monoespaçadas: dão o mesmo espaço para cada letra das palavras.
+        Usar a tag "code".
+
+        O "code" não usa identação no código!
+        Usar a tag "pre" e mesclar com a tag "code".
+    -->
+    <!--Código Python a seguir-->
+        <pre>
+            <code>
+    num = int(input('Digite um número:'))
+    if num %2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+            </code>
+        </pre>
+        <!--Usar "SHIFT+TAB" para colocar o código à esquerda e "TAB" para a direita.-->
+        <h2>Citações Simples (não possui quebra de linha)</h2>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q> </p>
+        <!--Usar a tag "q" para CITAÇÕES! -->
+        <h2>Citações completas</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+        <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/oWkeeH6ik1MC?hl=en&gbpv=0">
+            A diferença entre elementos inline e um bloco de teste é importante. Os elementos HTML neste capítulo escrevem os blocos de texto.
+        </blockquote>
+        
+        <!--blockquote serve para uma citação maior ou completa. Tem quebra de linhas e um deslocamento para a lateral direita.
+        
+            O "cite" visualmente nao vai aparecer nada mas nos mecanismos de buscas, a parte interna do site vai saber que a citação está referenciando o livro que está disponivel no endereço (mesmo que parcialmente).
+        -->
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+        <!--A tag "abbr" adiciona o significado das siglas.-->
+        <h2>Texto invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+        <!--A tag "bdo" muda a direção das palavras da esquerda para à direita ou da direita para à esquerda.-->
+</body>
+</html>
