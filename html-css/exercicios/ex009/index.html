@@ -5,50 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
+    <h1>Trabalhando com Listas &#x1f4dd;</h1>
     <hr>
-    <h2>Código-fonte / Pré-Formatação</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
-    <!--
-        Fonte monoespaçadas: dão o mesmo espaço para cada letra das palavras.
-        Usar a tag "code".
-
-        O "code" não usa identação no código!
-        Usar a tag "pre" e mesclar com a tag "code".
-    -->
-    <!--Código Python a seguir-->
-        <pre>
-            <code>
-    num = int(input('Digite um número:'))
-    if num %2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        print(f'O número {num} é ÍMPAR')
-    print('Fim do programa')
-            </code>
-        </pre>
-        <!--Usar "SHIFT+TAB" para colocar o código à esquerda e "TAB" para a direita.-->
-        <h2>Citações Simples (não possui quebra de linha)</h2>
-        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q> </p>
-        <!--Usar a tag "q" para CITAÇÕES! -->
-        <h2>Citações completas</h2>
-        <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
-        <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_and_CSS_For_Dummies/oWkeeH6ik1MC?hl=en&gbpv=0">
-            A diferença entre elementos inline e um bloco de teste é importante. Os elementos HTML neste capítulo escrevem os blocos de texto.
-        </blockquote>
-        
-        <!--blockquote serve para uma citação maior ou completa. Tem quebra de linhas e um deslocamento para a lateral direita.
-        
-            O "cite" visualmente nao vai aparecer nada mas nos mecanismos de buscas, a parte interna do site vai saber que a citação está referenciando o livro que está disponivel no endereço (mesmo que parcialmente).
+    <h2>Listas Ordenadas</h2>
+    <ol type="1"> 
+        <!--
+            O </li> se tornou opcional na HTML5
+            types: 1 A a I i
+            
+            ***Para deixar o código mais organizado, se não for utilizar o </li> tirar de todo o trecho de código***
         -->
-        <h2>Abreviações</h2>
-        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-        <!--A tag "abbr" adiciona o significado das siglas.-->
-        <h2>Texto invertido</h2>
-        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
-        <!--A tag "bdo" muda a direção das palavras da esquerda para à direita ou da direita para à esquerda.-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar banho</li>
+        <li>Ir pra faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar pra casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square"> <!--Types: disc, circle, square -->
+        <li>Pão</li>
+        <li>Queijo</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
 </body>
 </html>
