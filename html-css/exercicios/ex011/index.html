@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica 🖼️</h1>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <!--Sempre colocar o source acima da imagem base padrão do navegador.
+    -->
+    <h1>Reproduzindo Áudios &#x1f3b5;</h1>
+    <hr>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/cute-avalanche.mp3" controls autoplay></audio>
+    <!--Alguns navegadores nao suportam formatos mp3, mas podemos usar outros: WAV, OGG
+        Arquivos WAV são muito pesados, usando ele o site irá demorar mais para carregar. ***Não Usar***
+        
+        Arquivos para navegação devem ser compactos!
+
+        ***DEIXAR ALTA QUALIDADE DE SOM, VIDEO E IMAGEM SOMENTE PARA DOWNLOAD!***
+
+    -->
+    <br><br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir audio. <a href="midia/guanacast-33.mp3"Clique aqui para baixar o arquivo MP3></a></p>
+        <!--O preload tem 3 opções: 
+            
+            auto: só vai carregar o site todo assim que carregar o audio todo
+            
+            metadata: só vai carregar algumas informações sobre o arquivo, data, duração...
+            
+            none: só vai carregar se o usuário der play no áudio.
+
+            controls: mostra os botões.
+
+            loop-> quando a musica terminar de tocar, começa a tocar novamente
+            
+            (Se o navegador não conseguir reproduzir o arquivo mp3, tentará o arquivo ogg , e se não conseguir, tentará o arquivo wav.)
+        -->
+    </audio>
+
+</body>
+</html>
