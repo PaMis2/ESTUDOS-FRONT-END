@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love' ;
+            src: url('fonts/Do It with Love.otf') format('opentype'), url('fonts/Do It with Love.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            
+
+
+            /* 
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple advanced Typography)
+                - svg
+
+                OBS: Nem toda fonte terá os dois formatos (otf, ttf) geralmente esses formatos funcionam em todos os navegadores!
+
+                ***FICAR ATENTA AS VÍRGULAS E ASPAS! O NOME DO ARQUIVO TEM QUE SER IGUAL AO QUE TÁ NA PASTA****
+                
+            
+            */
+        }
+
+        @font-face {
+            font-family:'heart' ;
+            src: url('fonts/HEARRG__.TTF') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1{
+            font-family: 'heart', cursive;
+            font-size: 5em;
+            font-weight: normal;
+            color: deeppink;
+            
+
+        }
+
+        h2{
+            font-family: 'Love', cursive;
+            font-size: 4em;
+            font-weight: normal;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus deserunt ducimus a reprehenderit iusto consectetur? Ad aut provident adipisci tempora, sapiente dicta facere porro similique nesciunt ullam ducimus fuga eaque!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iusto aspernatur sed velit nemo sit earum consequuntur ipsam eaque pariatur neque non quam nobis quas beatae reprehenderit, sunt recusandae. Veniam?</p>
+</body>
+</html>
