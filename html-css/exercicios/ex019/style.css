@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+    
+*/
+
+body{
+    background-color: rgb(223, 210, 223);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color:  rgb(136, 65, 136);
+    text-decoration: underline;
+    
+}
+
+h2{
+    color: rgb(0, 93, 97);
+}
+
+#principal{
+    color:  rgb(60, 55, 193);
+    text-align: center;
+    background-color: plum;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    
+    
+}
